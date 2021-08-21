@@ -1,2 +1,2 @@
-# eddie-lin.me
-My personal website.
+# Portfolio
+My personal portfolio.
