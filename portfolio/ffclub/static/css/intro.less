@@ -1,0 +1,214 @@
+@import "ffcstyle";
+
+ul.carousel {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+ul.carousel > li:first-child{
+  position: relative;
+}
+ul.carousel > li:not(:first-child){
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*	-webkit-transition: -webkit-transform 1s ease-in-out;*/
+}
+ul.carousel > li img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/*
+li.bannerWelcome {
+  background: url('../images/css/intro_banner_welcome.jpg') top center no-repeat;
+}
+li.bannerFree {
+  background: url('../images/css/intro_banner_free.jpg') top center no-repeat;
+}
+li.bannerSupport {
+  background: url('../images/css/intro_banner_support.jpg') top center no-repeat;
+}
+*/
+#main-feature {
+  position: relative;
+}
+
+#main-feature > hgroup {
+//  display: none;
+  position: absolute;
+  bottom: 40px;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+}
+#main-feature > hgroup > h3 {
+  color: #ffffff;
+  text-shadow: none;
+  font-size: 30px;
+  text-indent: 360px;
+}
+
+#main-content{
+  width: 760px;
+}
+
+#intro-login {
+  position: relative;
+  height: 58px;
+  margin-top: -29px;
+  margin-bottom: 20px;
+  background: #fff;
+}
+#intro-login > div {
+  color: @body_color;
+  float: left;
+  height: 100%;
+  line-height: 100%;
+  font-size: 11px;
+  margin-left: 55px;
+  margin-top: 10px;
+}
+
+#intro-content {
+  position: relative;
+  background: #fff;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  h4 {
+    font-size: 28px;
+  }
+  p {
+    margin: 20px 0;
+    font-size: 14px;
+  }
+  .button {
+    width: 220px;
+    line-height: 31px;
+    span {
+      display: inline-block;
+    }
+  }
+}
+
+#intro-content .introHeading {
+  text-align: left;
+  padding-left: 55px;
+  margin-bottom: 20px;
+}
+#intro-content .introRules {
+  padding-left: 55px;
+  padding-right: 55px;
+}
+div.introPicture {
+  width: 600px;
+  height: 110px;
+  margin-left: 55px;
+  background-image: url(../images/css/intro_pic.png);
+  background-repeat: no-repeat;
+}
+
+.carousel .next, .carousel .prev{
+  background: url("../images/css/slide-arrows.png") no-repeat scroll 0 0 transparent;
+  border: 0 none;
+  cursor: pointer;
+  display: block;
+  width: 44px;
+  height: 60px;
+  opacity: 0.6;
+  overflow: hidden;
+  position: absolute;
+  text-indent: -99em;
+  top: 40%;
+  transition: opacity 0.3s ease-in-out 0s, left 0.3s ease-in-out 0s, right 0.3s ease-in-out 0s;
+  z-index: 100;
+}
+
+.carousel .next {
+  background-position: 100% 0;
+  right: 4px;
+}
+
+.carousel .prev {
+  background-position: 0 0;
+  left: 4px;
+}
+
+.carousel .next:hover {
+  opacity: 1;
+  right: 0px;
+}
+
+.carousel .prev:hover {
+  opacity: 1;
+  left: 0px;
+}
+@media only screen and (max-width: 800px){
+  #main-content{
+    width: 100%;
+  }
+  div.introPicture {
+    margin: auto;
+  }
+  #intro-content .introHeading {
+    padding-left: 20px;
+  }
+  #intro-content .introRules {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}
+@media only screen and (max-width: 640px){
+  #intro-login {
+    margin-top:20px;
+  }
+  div.introPicture {
+    width: 100%;
+    height: 110px;
+    background-size: 100%;
+    margin-left: 0;
+  }
+  .carousel .next, .carousel .prev{
+    background-size: 240%;
+    width: 20px;
+    height: 30px;
+  }
+  #main-feature > hgroup {
+    bottom: 0px;
+    &>h1,>h2 {
+      line-height: 0;
+    }
+    &>h3 {
+      text-align: right;
+      text-indent: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #intro-content {
+    h4 {
+      font-size: 22px;
+    }
+  }
+  div.introPicture {
+    height: 90px;
+  }
+
+  .carousel .next, .carousel .prev{
+    display: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  div.introPicture {
+    background-image: url(../images/css/intro_pic_m.png);
+    height: 60px;
+  }
+
+  .carousel .next, .carousel .prev{
+    display: none;
+  }
+}

@@ -1,0 +1,306 @@
+@import "every-moment-base";
+
+
+#masthead nav > ul > li > a, #masthead nav > ul > li > a:link, #masthead nav > ul > li > a:visited {
+  color: #ffffff;
+  text-shadow: none;
+}
+
+#wrapper {
+  background: url(../../../static/img/event/every-moment/home/bg-blue.png) left top repeat;
+  background-size: 100%;
+}
+
+#main-content {
+  background: transparent;
+  width: 960px;
+  height: 650px;
+}
+
+
+.fxos-phone {
+  width: 300px;
+  height: 555px;
+  position: absolute;
+  z-index: 10;
+  top: 52px;
+  left: 158px;
+  .phone-frame {
+    position: absolute;
+    background: url(../../../static/img/event/every-moment/upload/upload-phone.png);
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+}
+
+#preview {
+  position: absolute;
+  top: 80px;
+  left: 25px;
+  width: 250px;
+  height: 382px;
+  overflow: hidden;
+}
+
+#container {
+  position: absolute;
+}
+
+#dragger {
+  position: relative;
+  cursor: move;
+  img {
+    position: absolute;
+  }
+}
+
+#upload-title {
+  position: absolute;
+  z-index: 10;
+  right: 34px;
+  top: 126px;
+  width: 388px;
+  height: 130px;
+  background: url(../../../static/img/event/every-moment/upload/upload-title.png);
+}
+
+#main-content form ul li {
+  list-style: none;
+  margin-bottom: 7px;
+  label {
+    width: 60px;
+  }
+  input[type=text] {
+    width: 250px;
+  }
+  input#shareOnFb {
+    margin-left: 60px;
+  }
+  label[for=shareOnFb] {
+    width: auto;
+  }
+  label, input {
+    display: inline-block;
+  }
+  label[for=id_image_large],
+  #id_image_large {
+    display: none;
+  }
+
+}
+
+#details {
+  position: absolute;
+  display: block;
+  top: 331px;
+  right: 34px;
+  width: 383px;
+  height: auto;
+}
+
+form.details-form {
+  background: #ffffff;
+  width: 383px;
+  height: auto;
+  padding-bottom: 40px;
+  padding-top: 10px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  box-shadow: 0 0 0 1px rgb(255, 255, 255) inset;
+}
+
+.entrance {
+  .fxos-firefox {
+    display: none;
+  }
+
+  .fxos-firefox-tail {
+    display: none;
+  }
+
+  .spotlight {
+    display: block;
+    position: absolute;
+    left: 54px;
+    top: 171px;
+  }
+
+  #upload {
+    position: absolute;
+    z-index: 1;
+    left: 84px;
+    top: 201px;
+    display: block;
+    width: 138px;
+    height: 138px;
+    background: url(../../../static/img/event/every-moment/upload/upload-pic.png);
+    cursor: pointer;
+  }
+
+  .upload-tip {
+    position: absolute;
+    left: 84px;
+    top: 342px;
+    display: block;
+    width: 138px;
+    height: 58px;
+    background: url(../../../static/img/event/every-moment/upload/upload-word.png);
+  }
+  .detail-tip {
+    display: none;
+  }
+  label#re-upload-button {
+    display: none;
+  }
+
+  form.details-form {
+    background: none;
+    border: none;
+    box-shadow:none;
+    ul li input {
+      background: transparent;
+    }
+  }
+  a#upload-button {
+    display: none;
+  }
+}
+
+.uploaded {
+  .fxos-firefox {
+    background: url(../../../static/img/event/every-moment/upload/upload-fox01.png);
+    position: absolute;
+    width: 463px;
+    height: 375px;
+    top: 256px;
+    left: 62px;
+    z-index: 20;
+    display: block;
+    pointer-events: none;
+  }
+
+  .fxos-firefox-tail {
+    background: url(../../../static/img/event/every-moment/upload/upload-fox02.png);
+    position: absolute;
+    width: 537px;
+    height: 226px;
+    top: 120px;
+    left: -14px;
+    display: block;
+  }
+  .spotlight {
+    display: none;
+  }
+  #upload {
+    display: none;
+  }
+  .upload-tip {
+    display: none;
+  }
+  .detail-tip {
+//    position: absolute;
+    display: block;
+//    right: 280px;
+//    bottom: 60px;
+    width: 136px;
+    height: 63px;
+    background: url(../../../static/img/event/every-moment/upload/upload-fillword.png);
+  }
+
+  a#upload-button {
+    background: url(../../../static/img/event/every-moment/upload/upload-bt-blue.png);
+    color: #ffffff;
+    display: block;
+    width: 102px;
+    height: 33px;
+    font-weight: bold;
+    text-shadow: none;
+    text-align: center;
+    line-height: 30px;
+    float: right;
+    margin-right: 33px;
+    &:hover {
+        cursor: pointer;
+    }
+  }
+
+  label#re-upload-button {
+    background: url(../../../static/img/event/every-moment/upload/upload-bt-orange.png);
+    display: block;
+    width: 88px;
+    height: 29px;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: none;
+    text-align: center;
+    line-height: 26px;
+    position: absolute;
+    bottom: 12px;
+    left: 374px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  #upload-success {
+    background: url(../../../static/img/event/every-moment/upload/upload-success.png);
+    text-indent: 50px;
+    font-weight: bold;
+    width: 383px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ffffff;
+    margin-bottom: 93px;
+  }
+
+  #view-wall {
+    background: url(../../../static/img/event/every-moment/upload/upload-bt-newupload.png);
+    display: inline-block;
+    width: 142px;
+    height: 142px;
+  }
+  #view-wall-tip {
+    background: url(../../../static/img/event/every-moment/upload/upload-bt-word.png);
+    display: inline-block;
+    width: 162px;
+    height: 70px;
+    vertical-align: top;
+    margin-top: 38px;
+  }
+}
+
+.curtain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.5;
+}
+
+.rotate-90 {
+  .rotate(-90deg)
+}
+
+.rotate180 {
+  .rotate(180deg)
+}
+
+.rotate90 {
+  .rotate(90deg)
+}
+
+.rotate(@degree) {
+  transform: rotate(@degree);
+  /* Firefox */
+  -moz-transform: rotate(@degree);
+  /* Safari and Chrome */
+  -webkit-transform: rotate(@degree);
+  /* Opera */
+  -o-transform: rotate(@degree);
+  /* IE9 */
+  -ms-transform: rotate(@degree);
+  /* IE6,IE7 */
+}

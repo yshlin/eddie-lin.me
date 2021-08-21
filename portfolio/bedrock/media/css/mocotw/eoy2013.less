@@ -1,0 +1,1309 @@
+@import "../sandstone/lib";
+
+.animate(@settings) {
+  animation: @settings;
+  -moz-animation: @settings;
+  -webkit-animation: @settings;
+  -o-animation: @settings;
+  -ms-animation: @settings;
+}
+
+.winkKeyFrames() {
+  0% {
+    height: 190px;
+  }
+  3% {
+    height: 0px;
+  }
+  6% {
+    height: 190px;
+  }
+  9% {
+    height: 0px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+
+@keyframes wink {
+  .winkKeyFrames();
+}
+@-moz-keyframes wink {
+  .winkKeyFrames();
+}
+@-webkit-keyframes wink {
+  .winkKeyFrames();
+}
+@-o-keyframes wink {
+  .winkKeyFrames();
+}
+@-ms-keyframes wink {
+  .winkKeyFrames();
+}
+
+.shakeKeyFrames() {
+  0% {
+    .transform(rotate(25deg));
+  }
+  3% {
+    .transform(rotate(0deg));
+  }
+  6% {
+    .transform(rotate(25deg));
+  }
+  9% {
+    .transform(rotate(0deg));
+  }
+  100% {
+    .transform(rotate(0deg));
+  }
+}
+
+@keyframes shake {
+  .shakeKeyFrames();
+}
+@-moz-keyframes shake {
+  .shakeKeyFrames();
+}
+@-webkit-keyframes shake {
+  .shakeKeyFrames();
+}
+@-o-keyframes shake {
+  .shakeKeyFrames();
+}
+@-ms-keyframes shake {
+  .shakeKeyFrames();
+}
+
+
+.blinkKeyFrames() {
+  0% {
+    opacity: 1.0;
+  }
+  20% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  80% {
+    opacity: 1.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@keyframes blink {
+  .blinkKeyFrames();
+}
+@-moz-keyframes blink {
+  .blinkKeyFrames();
+}
+@-webkit-keyframes blink {
+  .blinkKeyFrames();
+}
+@-o-keyframes blink {
+  .blinkKeyFrames();
+}
+@-ms-keyframes wink {
+  .blinkKeyFrames();
+}
+
+
+.floatKeyFrames() {
+  0% {
+    background-position: 0 10px;
+  }
+  50% {
+    background-position: 0 0px;
+  }
+  100% {
+    background-position: 0 10px;
+  }
+}
+
+@keyframes float {
+  .floatKeyFrames();
+}
+@-moz-keyframes float {
+  .floatKeyFrames();
+}
+@-webkit-keyframes float {
+  .floatKeyFrames();
+}
+@-o-keyframes float {
+  .floatKeyFrames();
+}
+@-ms-keyframes float {
+  .floatKeyFrames();
+}
+
+
+#masthead {
+  z-index: 1000;
+  position: relative;
+  margin-top: -2px;
+}
+
+#tabzilla-panel {
+  z-index: 1000;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  margin-bottom: -2px;
+}
+
+#outer-wrapper {
+  background: #555559 !important;
+}
+
+html, body {
+  height: 11000px;
+}
+
+#body-wrapper {
+  position: relative;
+}
+
+#body-wrapper, #outer-wrapper {
+  overflow: hidden;
+  height: 100%;
+}
+
+.main-content {
+  height: 100%;
+  position: relative;
+}
+
+#mozilla-2013 {
+  margin-top: -44px;
+  height: 1000px;
+}
+#firefox-desktop {
+  height: 1000px;
+}
+#firefox-android {
+  height: 1000px;
+}
+#firefox-os {
+  height: 1000px;
+}
+#privacy {
+  height: 1000px;
+}
+#open-badges {
+  height: 1000px;
+}
+#webmaker {
+  height: 1000px;
+}
+#mdn {
+  height: 1000px;
+}
+#community {
+  height: 1000px;
+}
+#mozilla-future {
+  height: 1200px;
+}
+#subscription {
+  height: 100px;
+}
+
+.curtain1 {
+  position: fixed;
+  display: block;
+  z-index: 1;
+  top: -1%;
+  left: 0;
+  background-color: #C13831;
+  width: 100%;
+  height: 2000px;
+}
+
+.curtain2 {
+  position: fixed;
+  display: block;
+  z-index: 250;
+  background-color: #D7D3C8;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2000px;
+}
+
+.behindScene {
+  top: 100%;
+}
+
+.bubble {
+  display: block;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: white;
+  h2 {
+    display: block;
+    color: white;
+    font-size: 55px;
+    font-weight: bolder;
+    opacity: 0;
+  }
+  h3 {
+    display: block;
+    color: white;
+    font-size: 31px;
+    opacity: 0;
+  }
+  em {
+    font-size: 74px;
+    font-weight: bolder;
+    font-style: normal;
+    line-height: 80px;
+    display: inline-block;
+    letter-spacing: 2px;
+    margin-top: 4px;
+  }
+  em.block {
+    display: block;
+  }
+  p {
+    display: inline-block;
+    line-height: 38px;
+    margin-bottom: 0;
+  }
+  p.block {
+    display: block;
+  }
+  small {
+    display: inline-block;
+    font-size: 24px;
+    font-style: italic;
+    line-height: 28px;
+  }
+  ul {
+    display: block;
+    opacity: 0;
+  }
+  ul li {
+    list-style-type: none;
+    margin-left: 0;
+    font-size: 31px;
+  }
+  a {
+    color: white;
+  }
+}
+
+#firefox {
+  position: fixed;
+  background-image: url(../../../media/img/mocotw/eoy2013/firefox.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  z-index: 800;
+  width: 371px;
+  height: 385px;
+  left: 50%;
+  top: 50%;
+  margin-top: 60px;
+}
+
+#android {
+  position: absolute;
+  background-image: url(../../../media/img/mocotw/eoy2013/andriod-robot.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 234px;
+  height: 311px;
+  right: 5px;
+  top: 200px;
+  .transform-origin(50% 100%);
+  .animate(shake 5s infinite);
+}
+
+#android-stars {
+  position: absolute;
+  display: block;
+  background-image: url(../../../media/img/mocotw/eoy2013/andriod-star.png);
+  background-repeat: no-repeat;
+  background-size: 216px auto;
+  width: 0px;
+  height: 33px;
+  top: 231px;
+  left: 102px;
+  .transition(width 1s ease-in);
+  &.appear {
+    width: 216px;
+  }
+}
+
+#fxos {
+  position: fixed;
+  background-image: url(../../../media/img/mocotw/eoy2013/firefoxos-fox.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  z-index: 800;
+  width: 619px;
+  height: 552px;
+  right: 50%;
+  margin-right: -132px;
+  bottom: 100%;
+  pointer-events: none;
+}
+
+#eye-cover {
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  background: url(../../../media/img/mocotw/eoy2013/eye-cover.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  right: 20px;
+  top: 35px;
+  .animate(wink 5s infinite);
+}
+
+#anti-eye {
+  position: absolute;
+  background-image: url(../../../media/img/mocotw/eoy2013/privacy-eye.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 189px;
+  height: 190px;
+  right: 20px;
+  top: 35px;
+}
+
+#bubble0 {
+  .bubble;
+  background-image: url(../../../media/img/mocotw/eoy2013/gray-up.png);
+  z-index: 100;
+  width: 549px;
+  height: 256px;
+  margin-left: 250px;
+  left: 50%;
+  top: -11px;
+  .animate(float 3s infinite);
+}
+
+#bubble1 {
+  .bubble;
+  background-image: url(../../../media/img/mocotw/eoy2013/firefox-orange.png);
+  z-index: 600;
+  width: 876px;
+  height: 937px;
+  right: 50%;
+  margin-right: -176px;
+  top: 50%;
+  margin-top: 40px;
+  h2 {
+    width: 448px;
+    padding-top: 116px;
+    margin-left: 300px;
+  }
+  ul {
+    width: 448px;
+    margin-left: 200px;
+  }
+  em {
+    color: #FFCC02;
+  }
+  p.block {
+    text-align: right;
+  }
+  em.asm-js {
+    vertical-align: top;
+  }
+  p.asm-js {
+    margin-top: 24px;
+    width: 240px;
+  }
+  .animate(float 3s infinite 1s);
+}
+
+#bubble2 {
+  .bubble;
+  .behindScene;
+  background-image: url(../../../media/img/mocotw/eoy2013/android-yellow.png);
+  z-index: 700;
+  width: 651/2px;
+  height: 739px;
+  left: 50%;
+  margin-left: -54px;
+  //  top: 300px;
+  h2 {
+    width: 342px;
+    padding-top: 280px;
+    margin-left: 102px;
+    color: #E36124;
+  }
+  ul {
+    width: 342px;
+    margin-left: 102px;
+  }
+  em {
+    color: #4E4F53;
+    letter-spacing: -3px;
+  }
+  p {
+    color: #E36124;
+  }
+  p.block {
+    text-align: right;
+  }
+  .animate(float 3s infinite 2s);
+}
+
+#bubble3 {
+  .bubble;
+  .behindScene;
+  background-image: url(../../../media/img/mocotw/eoy2013/firefoxos-blue.png);
+  z-index: 400;
+  width: 1044/2px;
+  height: 832px;
+  right: 50%;
+  margin-right: -500px;
+  //  top: 100px;
+  h2 {
+    width: 320px;
+    padding-top: 302px;
+    margin-left: 536px;
+  }
+  ul {
+    width: 320px;
+    margin-left: 536px;
+  }
+  em {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    color: #00408E;
+  }
+  .animate(float 3s infinite);
+}
+
+#bubble4 {
+  .bubble;
+  .behindScene;
+  background-image: url(../../../media/img/mocotw/eoy2013/privacy-main.png);
+  z-index: 600;
+  width: 799/2px;
+  height: 808px;
+  right: 50%;
+  margin-right: -171px;
+  //  top: 17px;
+  h2 {
+    width: 420px;
+    padding-top: 72px;
+    margin-left: 194px;
+  }
+  h3 {
+    width: 420px;
+    margin-left: 194px;
+  }
+  ul {
+    width: 420px;
+    margin-left: 194px;
+  }
+  em {
+    display: inline-block;
+    text-align: center;
+    color: rgb(51, 139, 222);
+    letter-spacing: -3px !important;
+    &#lightbeam-download {
+      font-size: 60px;
+    }
+    &#trust-worthy {
+      font-size: 58px;
+    }
+  }
+  .animate(float 3s infinite 1s);
+}
+
+#bubble4-back {
+  .bubble;
+  .behindScene;
+  z-index: 300;
+  background-image: url(../../../media/img/mocotw/eoy2013/privacy-gray.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 358/2px;
+  height: 367px;
+  right: 50%;
+  margin-right: 32px;
+  //  top: 0px;
+  .animate(float 3s infinite 1s);
+}
+
+#bubble5 {
+  .bubble;
+  .behindScene;
+  background-image: url(../../../media/img/mocotw/eoy2013/openbadges.png);
+  z-index: 500;
+  width: 641/2px;
+  height: 834px;
+  left: 50%;
+  margin-left: 41px;
+  //  top: -40px;
+  text-align: right;
+  h2 {
+    width: 300px;
+    padding-top: 194px;
+    margin-left: 160px;
+    color: #C13831;
+  }
+  ul {
+    width: 300px;
+    margin-left: 160px;
+  }
+  p {
+    color: #C13831;
+  }
+  .animate(float 3s infinite 2s);
+}
+
+#bubble6 {
+  .bubble;
+  .behindScene;
+  background-image: url(../../../media/img/mocotw/eoy2013/webmaker.png);
+  z-index: 400;
+  width: 720/2px;
+  height: 1075px;
+  left: 50%;
+  margin-left: -100px;
+  //  top: -150px;
+  h2 {
+    width: 320px;
+    padding-top: 318px;
+    margin-left: 186px;
+    color: #FFCD03;
+  }
+  ul {
+    width: 320px;
+    margin-left: 186px;
+  }
+  em {
+    letter-spacing: -3px;
+  }
+  p {
+    color: #FFCD03;
+  }
+  .animate(float 3s infinite);
+}
+
+#bubble7 {
+  .bubble;
+  .behindScene;
+  background-image: url(../../../media/img/mocotw/eoy2013/mdn.png);
+  z-index: 300;
+  width: 831/2px;
+  height: 888px;
+  right: 50%;
+  margin-right: -81px;
+  //  top: 0px;
+  h2 {
+    width: 400px;
+    padding-top: 378px;
+    margin-left: 312px;
+  }
+  ul {
+    width: 400px;
+    margin-left: 312px;
+  }
+  em {
+    letter-spacing: -4px;
+    color: #00549F;
+  }
+  .animate(float 3s infinite 1s);
+}
+
+#bubble8 {
+  .bubble;
+  .behindScene;
+  background-image: url(../../../media/img/mocotw/eoy2013/community.png);
+  z-index: 200;
+  width: 918/2px;
+  height: 1092px;
+  left: 50%;
+  margin-left: -522px;
+  //  top: 0px;
+  h2 {
+    width: 400px;
+    padding-top: 368px;
+    margin-left: 312px;
+    color: #555559;
+  }
+  ul {
+    width: 400px;
+    margin-left: 312px;
+  }
+  p {
+    color: #555559;
+  }
+  em {
+    color: #C13831;
+    letter-spacing: -2px;
+  }
+  a {
+    color: #555559;
+  }
+  .animate(float 3s infinite 2s);
+}
+
+#bubble9 {
+  .bubble;
+  .behindScene;
+  background-image: url(../../../media/img/mocotw/eoy2013/red.png);
+  z-index: 100;
+  width: 894/2px;
+  height: 903px;
+  right: 50%;
+  margin-right: -318px;
+  //  top: 0px;
+  ul {
+    width: 520px;
+    padding-top: 322px;
+    margin-left: 140px;
+    a {
+      text-decoration: underline;
+    }
+  }
+  img {
+    margin-top: 20px;
+    margin-left: 140px;
+  }
+  .animate(float 3s infinite);
+}
+
+#bubble10 {
+  .bubble;
+  .behindScene;
+  background-image: url(../../../media/img/mocotw/eoy2013/gray-down.png);
+  z-index: 200;
+  width: 657/2px;
+  height: 871px;
+  left: 50%;
+  margin-left: 186px;
+  //  top: 0px;
+  .animate(float 3s infinite 1s);
+}
+
+#mozilla {
+  display: block;
+  position: absolute;
+  background-image: url(../../../media/img/mocotw/eoy2013/mozilla.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+//  background-position: 0 37px;
+  z-index: 200;
+  width: 678px;
+  height: 454px;
+  top: -7px;
+  left: -114px;
+}
+
+#year-2013 {
+  display: block;
+  position: absolute;
+  z-index: 200;
+  background-image: url(../../../media/img/mocotw/eoy2013/2013.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 823px;
+  height: 789px;
+  top: 147px;
+  left: 276px;
+}
+
+#year-review {
+  display: block;
+  position: absolute;
+  z-index: 200;
+  background-image: url(../../../media/img/mocotw/eoy2013/review.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 452px;
+  height: 151px;
+  top: 350px;
+  left: 276px;
+}
+
+#footer-email-form, #newsletter-form {
+  bottom: 0;
+  margin-bottom: 222px;
+  position: absolute;
+  z-index: 1000;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+#side-nav {
+  position: fixed;
+  z-index: 500;
+  top: 50%;
+  right: 30px;
+  width: 20px;
+  margin-top: -154px;
+  padding: 0;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      margin: 8px 0;
+    }
+    li a {
+      display: block;
+      width: 12px;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      opacity: 0.5;
+      .transition();
+      &:hover, &:focus, &.curr {
+        opacity: 1;
+      }
+    }
+    li a.nav {
+      height: 12px;
+      padding: 0;
+      background: #fff;
+      .border-radius(7px);
+    }
+  }
+
+  #share-pane {
+    position: relative;
+    display: none;
+    width: auto;
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.5);
+    padding: @baseLine / 2;
+    margin: -(@baseLine * 2) 0 0 @baseLine;
+    .border-radius(@baseLine / 4);
+    .share-button {
+      visibility: hidden;
+      display: none;
+    }
+    #share-options {
+      margin-top: @baseLine / 2;
+    }
+    ul li {
+      margin: 0;
+      padding: 0;
+    }
+    a.close {
+      position: absolute;
+      top: 0;
+      right: @baseLine / 2;
+      height: 20px;
+      width: 20px;
+      font-size: 20px;
+      color: #484848;
+      span {
+        display: block;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      &:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: "\00D7";
+        font-weight: bold;
+      }
+    }
+
+  }
+}
+
+#scroll-tip {
+  position: fixed;
+  display: block;
+  background-image: url(../../../media/img/mocotw/eoy2013/scroll.png);
+  width: 28px;
+  height: 32px;
+  left: 50%;
+  margin-left: -14px;
+  bottom: 20px;
+  z-index: 999;
+  cursor: pointer;
+//  pointer-events: none;
+  .animate(blink 1.5s infinite)
+}
+
+@media screen and (max-width: 999px) {
+  html, body {
+    height: 7800px;
+  }
+  #mozilla {
+    position: static;
+    top: 0;
+    margin-left: -150px;
+  }
+  #year-2013 {
+    position: static;
+    top: 0;
+    margin-top: -300px;
+    margin-left: 150px;
+  }
+  #year-review {
+    position: static;
+    top: 0;
+    margin-top: -590px;
+    margin-left: 150px;
+  }
+  #firefox {
+    position: relative;
+    top: 0;
+    float: left;
+    clear: both;
+    left: 70%;
+    margin-top: -180px;
+  }
+  #android {
+    position: static;
+    top: 0;
+    float: right;
+    clear: both;
+    margin-top: -420px;
+  }
+  #fxos {
+    position: static;
+    top: 0;
+    float: left;
+    clear: both;
+    margin-top: -680px;
+    margin-left: -100px;
+  }
+  #android-stars {
+    width: 216px;
+  }
+  .bubbleStatic {
+    position: static;
+    top: 0;
+    ul {
+      opacity: 1.0;
+    }
+    h2 {
+      opacity: 1.0;
+    }
+    h3 {
+      opacity: 1.0;
+    }
+    left: auto;
+    right: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #bubble0 {
+    position: absolute;
+    top: -53px;
+  }
+  #bubble1 {
+    .bubbleStatic;
+    margin-top: -80px;
+    margin-left: -58px;
+  }
+  #bubble2 {
+    .bubbleStatic;
+    position: relative;
+    width: 651px;
+    margin-top: -40px;
+  }
+  #bubble3 {
+    .bubbleStatic;
+    width: 1044px;
+    margin-top: -100px;
+    margin-left: -142px;
+    margin-bottom: 0;
+  }
+  #bubble4 {
+    .bubbleStatic;
+    position: relative;
+    width: 799px;
+    margin-left: -19px;
+    margin-top: -100px;
+  }
+  #bubble4-back {
+    .bubbleStatic;
+    width: 358px;
+    float: left;
+    clear: both;
+    z-index: 0;
+    margin-top: -772px;
+    margin-left: -2px;
+  }
+  #bubble5 {
+    .bubbleStatic;
+    position: relative;
+    width: 641px;
+    margin-left: 59px;
+    margin-top: -180px;
+  }
+  #bubble6 {
+    .bubbleStatic;
+    position: relative;
+    width: 720px;
+    margin-left: 20px;
+    margin-top: -200px;
+  }
+  #bubble7 {
+    .bubbleStatic;
+    position: relative;
+    width: 831px;
+    margin-left: -35px;
+    margin-top: -100px;
+  }
+  #bubble8 {
+    .bubbleStatic;
+    position: relative;
+    width: 918px;
+    margin-left: -79px;
+    margin-top: -200px;
+  }
+  #bubble9 {
+    .bubbleStatic;
+    width: 894px;
+    margin-left: -67px;
+    margin-top: -180px;
+  }
+  #bubble10 {
+    .bubbleStatic;
+    width: 657px;
+    float: right;
+    clear: both;
+    margin-top: -600px;
+    margin-right: -300px;
+  }
+  .curtain1 {
+    position: absolute;
+    z-index: 0;
+    height: 3000px;
+  }
+  .curtain2 {
+    position: absolute;
+    z-index: 0;
+    top: 2500px;
+    height: 2600px;
+  }
+
+  #footer-email-form, #newsletter-form {
+    margin-bottom: 262px;
+  }
+  #scroll-tip {
+    display: none;
+  }
+  #side-nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  html, body {
+    height: 4250px;
+  }
+  #mozilla {
+    position: relative;
+    left: 50%;
+    width: 339px;
+    margin-left: -250px;
+  }
+  #year-2013 {
+    position: relative;
+    width: 411px;
+    left: 50%;
+    margin-left: -110px;
+    margin-top: -350px;
+  }
+  #year-review {
+    position: relative;
+    width: 226px;
+    left: 50%;
+    margin-left: -110px;
+    margin-top: -660px;
+  }
+
+  #firefox {
+    width: 371px/2.5;
+    height: 385px/2.5;
+    margin-top: -80px;
+    left: 64%;
+  }
+  #android {
+    width: 117px;
+    height: 155px;
+    margin-top: -240px;
+  }
+  #android-stars {
+    background-size: 108px auto;
+    top: 231/2px;
+    left: 102/2px;
+    width: 108px;
+    height: 16px;
+    &.appear {
+      width: 108px;
+    }
+  }
+  #fxos {
+    background-size: 309px auto;
+    width: 450px;
+    height: 276px;
+    margin-top: -360px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #eye-cover {
+    width: 95px;
+  }
+  #anti-eye {
+    width: 95px;
+  }
+  .bubbleTablet(@width, @height) {
+    width: @width/2;
+    height: @height/2 + 10;
+    margin-left: auto;
+    margin-right: auto;
+    h2 {
+      font-size: 27px;
+    }
+    h3 {
+      font-size: 15px;
+    }
+    em {
+      font-size: 37px;
+      line-height: 40px;
+      letter-spacing: 1px;
+      margin-top: 2px;
+      &#lightbeam-download {
+        font-size: 30px;
+      }
+      &#trust-worthy {
+        font-size: 29px;
+      }
+    }
+    p {
+      line-height: 19px;
+    }
+    p.block {
+      display: block;
+    }
+    small {
+      font-size: 12px;
+      line-height: 14px;
+    }
+    ul li {
+      font-size: 15px;
+    }
+
+  }
+  #bubble0 {
+    .bubbleTablet(549px, 256px);
+    position: absolute;
+    top: -73px;
+  }
+  #bubble1 {
+    .bubbleTablet(876px, 937px);
+    position: relative;
+    margin-top: -100px;
+    h2 {
+      width: 224px;
+      padding-top: 66px;
+      margin-left: 100px;
+    }
+    ul {
+      width: 224px;
+      margin-left: 100px;
+    }
+    p.asm-js {
+      width: 120px;
+    }
+  }
+  #bubble2 {
+    .bubbleTablet(651px, 739px);
+    margin-top: -30px;
+    h2 {
+      width: 342/2px;
+      padding-top: 280/2px;
+      margin-left: 102/2px;
+    }
+    ul {
+      width: 342/2px;
+      margin-left: 102/2px;
+    }
+  }
+  #bubble3 {
+    .bubbleTablet(1044px, 832px);
+    margin-top: -60px;
+    margin-bottom: -60px;
+    h2 {
+      width: 320/2px;
+      padding-top: 302/2px;
+      margin-left: 536/2px;
+    }
+    ul {
+      width: 320/2px;
+      margin-left: 536/2px;
+    }
+    em {
+      width: 100/2px;
+    }
+  }
+  #bubble4 {
+    .bubbleTablet(799px, 808px);
+    position: relative;
+    margin-top: 0;
+    h2 {
+      width: 420/2px;
+      padding-top: 72/2px;
+      margin-left: 194/2px;
+    }
+    h3 {
+      width: 420/2px;
+      margin-left: 194/2px;
+    }
+    ul {
+      width: 420/2px;
+      margin-left: 194/2px;
+    }
+  }
+  #bubble4-back {
+    .bubbleTablet(358px, 367px);
+    background-size: 358/2px auto;
+    width: 765/2px;
+    z-index: 0;
+    margin-top: -400px;
+    float: none;
+  }
+  #bubble5 {
+    .bubbleTablet(641px, 834px);
+    margin-top: 120px;
+    position: relative;
+    h2 {
+      width: 300/2px;
+      padding-top: 194/2px;
+      margin-left: 160/2px;
+    }
+    ul {
+      width: 300/2px;
+      margin-left: 160/2px;
+    }
+  }
+  #bubble6 {
+    .bubbleTablet(720px, 1075px);
+    position: relative;
+    margin-top: -120px;
+    h2 {
+      width: 320/2px;
+      padding-top: 318/2px;
+      margin-left: 186/2px;
+    }
+    ul {
+      width: 350/2px;
+      margin-left: 186/2px;
+    }
+  }
+  #bubble7 {
+    .bubbleTablet(831px, 888px);
+    position: relative;
+    margin-top: -60px;
+    h2 {
+      width: 400/2px;
+      padding-top: 378/2px;
+      margin-left: 312/2px;
+    }
+    ul {
+      width: 400/2px;
+      margin-left: 312/2px;
+    }
+  }
+  #bubble8 {
+    .bubbleTablet(918px, 1092px);
+    position: relative;
+    margin-top: -120px;
+    h2 {
+      width: 400/2px;
+      padding-top: 368/2px;
+      margin-left: 312/2px;
+    }
+    ul {
+      width: 400/2px;
+      margin-left: 312/2px;
+    }
+  }
+  #bubble9 {
+    .bubbleTablet(894px, 903px);
+    margin-top: -120px;
+    ul {
+      width: 520/2px;
+      padding-top: 322/2px;
+      margin-left: 140/2px;
+    }
+    img {
+      margin-top: 20/2px;
+      margin-left: 140/2px;
+    }
+  }
+  #bubble10 {
+    .bubbleTablet(657px, 871px);
+    float: left;
+    clear: both;
+    margin-top: -250px;
+    margin-left: 60%;
+  }
+  .curtain1 {
+    height: 1800px;
+  }
+  .curtain2 {
+    top: 1450px;
+    height: 1200px;
+  }
+  #footer-email-form, #newsletter-form {
+    margin-bottom: 302px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html, body {
+    height: 4400px;
+  }
+  .main-content {
+    width: 480px;
+    left: 50%;
+    margin-left: -240px;
+  }
+  #firefox {
+    width: 371px/3;
+    height: 385px/3;
+    margin-top: -48px;
+    left: 58%;
+  }
+  #fxos {
+    background-size: 244px auto;
+    margin-top: -320px;
+  }
+  #bubble3 {
+    h2 {
+      margin-left: 400/2px;
+    }
+    ul {
+      margin-left: 400/2px;
+    }
+  }
+  #footer-email-form, #newsletter-form {
+    margin-bottom: 422px;
+  }
+}

@@ -1,0 +1,1100 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+@-webkit-keyframes pebbles-bounce-down {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -500px, 0);
+    transform: translate3d(0, -500px, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0); }
+  75% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0); }
+  100% {
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes pebbles-bounce-down {
+  0%, 60%, 75%, 90%, 100% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -500px, 0); }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0); }
+  75% {
+    transform: translate3d(0, 0, 0); }
+  90% {
+    transform: translate3d(0, 5px, 0); }
+  100% {
+    transform: none; } }
+
+@-webkit-keyframes pebbles-fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes pebbles-fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes pebbles-fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes pebbles-fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+#newsletter-subscribe {
+  background: #c13832;
+  color: #fff;
+  padding-top: 20px; }
+  #newsletter-subscribe .content {
+    padding: 40px 0;
+    width: 300px; }
+  #newsletter-subscribe .form-title {
+    background: url("../../../media/img/newsletter/mozorg-newsletter.svg") center top no-repeat;
+    -webkit-background-size: 100px 100px;
+    background-size: 100px 100px;
+    padding: 120px 0 20px 0;
+    text-align: center; }
+  #newsletter-subscribe h3 {
+    font-size: 32px;
+    font-size: 1.77778rem;
+    margin: 0 0 0.2em;
+    text-align: center; }
+  #newsletter-subscribe h4 {
+    font-size: 20px;
+    font-size: 1.11111rem;
+    font-weight: normal; }
+    @media screen and (min-width: 1000px) {
+      #newsletter-subscribe h4 {
+        font-size: 24px;
+        font-size: 1.33333rem;
+        line-height: 1.1; } }
+  #newsletter-subscribe .field {
+    margin-bottom: 10px; }
+    #newsletter-subscribe .field label {
+      display: block;
+      margin-bottom: 0.1em; }
+  #newsletter-subscribe .field-format label {
+    font-family: "Open Sans", X-LocaleSpecific, sans-serif;
+    display: inline;
+    margin-right: 20px; }
+  #newsletter-subscribe .field-privacy {
+    font-size: 12px;
+    font-size: 0.66667rem;
+    font-family: "Open Sans", X-LocaleSpecific, sans-serif; }
+    #newsletter-subscribe .field-privacy input {
+      float: left; }
+    #newsletter-subscribe .field-privacy .title {
+      display: block;
+      padding-left: 25px; }
+  #newsletter-subscribe a {
+    color: #fff; }
+  #newsletter-subscribe input[type='email'] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-size: 0.88889rem;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+    border: 0;
+    border-radius: 4px;
+    line-height: 1.1;
+    padding: 0.75em 20px;
+    width: 100%; }
+  #newsletter-subscribe select {
+    font-size: 14px;
+    font-size: 0.77778rem;
+    font-family: "Open Sans", X-LocaleSpecific, sans-serif;
+    line-height: 1.5;
+    max-width: 80%; }
+  #newsletter-subscribe p.form-details {
+    font-family: "Open Sans", X-LocaleSpecific, sans-serif;
+    line-height: 1;
+    margin-top: 8px; }
+  #newsletter-subscribe .thank {
+    padding-top: 20px; }
+    #newsletter-subscribe .thank p {
+      -webkit-animation: pebbles-fade-in 0.5s ease-in 0.8s 1 normal both;
+      animation: pebbles-fade-in 0.5s ease-in 0.8s 1 normal both;
+      margin-top: 20px; }
+  #newsletter-subscribe .errorlist {
+    background: #fff;
+    color: #c13832;
+    padding: 10px 20px; }
+  @media screen and (min-width: 480px) {
+    #newsletter-subscribe .content {
+      width: 460px; } }
+  @media screen and (min-width: 760px) {
+    #newsletter-subscribe .content {
+      width: 740px; }
+    #newsletter-subscribe #newsletter-form {
+      zoom: 1;
+      float: left;
+      margin-left: 430px;
+      width: 280px; }
+      #newsletter-subscribe #newsletter-form:after {
+        clear: both;
+        content: '';
+        display: block;
+        height: 0;
+        visibility: hidden; }
+    #newsletter-subscribe .form-title {
+      -webkit-background-size: 120px 120px;
+      background-size: 120px 120px;
+      background-position: left 10px;
+      float: left;
+      margin: -10px 10px 0 -400px;
+      padding: 10px 0 20px 140px;
+      text-align: left;
+      width: 220px; }
+    #newsletter-subscribe h3 {
+      text-align: left; } }
+  @media screen and (min-width: 1000px) {
+    #newsletter-subscribe .content {
+      width: 980px; }
+    #newsletter-subscribe #newsletter-form {
+      margin-left: 570px;
+      padding-top: 20px;
+      width: 380px; }
+    #newsletter-subscribe .form-title {
+      -webkit-background-size: 150px 150px;
+      background-size: 150px 150px;
+      background-position: left top;
+      margin: -20px 10px 0 -540px;
+      min-height: 120px;
+      padding-left: 180px;
+      width: 300px; }
+    #newsletter-subscribe h3 {
+      font-size: 40px;
+      font-size: 2.22222rem; }
+    #newsletter-subscribe h4 {
+      font-size: 24px;
+      font-size: 1.33333rem; } }
+
+.js #form-details,
+.js .form-details {
+  display: none; }
+
+.js #newsletter-spinner {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+html[dir="rtl"] #newsletter-subscribe h3,
+html[dir="rtl"] #newsletter-subscribe h4 {
+  text-align: right; }
+
+@-webkit-keyframes pebbles-bounce-down {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -500px, 0);
+    transform: translate3d(0, -500px, 0); }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0); }
+  75% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0); }
+  100% {
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes pebbles-bounce-down {
+  0%, 60%, 75%, 90%, 100% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -500px, 0); }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0); }
+  75% {
+    transform: translate3d(0, 0, 0); }
+  90% {
+    transform: translate3d(0, 5px, 0); }
+  100% {
+    transform: none; } }
+
+@-webkit-keyframes pebbles-fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes pebbles-fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes pebbles-fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes pebbles-fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+html.noscroll {
+  overflow: hidden;
+  height: 100%; }
+  html.noscroll body {
+    height: 100%;
+    overflow: hidden; }
+  html.noscroll #modal {
+    position: absolute; }
+  @media screen and (min-width: 760px) {
+    html.noscroll {
+      height: auto; }
+      html.noscroll body {
+        height: auto; }
+      html.noscroll #modal {
+        position: fixed; } }
+
+#modal {
+  -webkit-animation: pebbles-fade-in 300ms ease-in 0ms 1 normal both;
+  animation: pebbles-fade-in 300ms ease-in 0ms 1 normal both;
+  background: #000;
+  background: rgba(0, 0, 0, 0.85);
+  bottom: 0;
+  height: 101%;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999999; }
+  #modal .window {
+    color: #333;
+    padding: 20px; }
+    #modal .window .inner {
+      position: relative;
+      background: #fff;
+      padding: 20px;
+      zoom: 1; }
+      #modal .window .inner:after {
+        clear: both;
+        content: '';
+        display: block;
+        height: 0;
+        visibility: hidden; }
+      #modal .window .inner > header {
+        font-size: 48px;
+        font-size: 2.66667rem;
+        color: #fff;
+        display: block;
+        height: auto;
+        line-height: 1.3;
+        padding: 0 60px 0 20px;
+        background: #c13832;
+        margin: -20px -20px 20px; }
+      #modal .window .inner #modal-close {
+        cursor: pointer;
+        position: absolute;
+        right: 9px;
+        top: 9px;
+        z-index: 99; }
+        #modal .window .inner #modal-close a {
+          display: none; }
+        #modal .window .inner #modal-close .button {
+          overflow: hidden;
+          text-indent: 120%;
+          white-space: nowrap;
+          background: transparent url("../../../media/img/mozid/modal-close.svg") center center no-repeat;
+          -webkit-background-size: 22px, 22px;
+          background-size: 22px, 22px;
+          border-radius: 50%;
+          border: 2px solid #fff;
+          height: 42px;
+          min-width: 0;
+          padding: 0;
+          width: 42px; }
+          #modal .window .inner #modal-close .button:hover, #modal .window .inner #modal-close .button:focus {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            box-shadow: none; }
+      #modal .window .inner .overlay-contents {
+        background: transparent;
+        margin: 0 auto;
+        padding-top: 20px; }
+        #modal .window .inner .overlay-contents img, #modal .window .inner .overlay-contents iframe {
+          max-width: 100%; }
+
+/* Tweaks for RTL locales */
+html[dir="rtl"] #modal .window .inner #modal-close {
+  left: 9px;
+  right: auto;
+  text-align: left; }
+
+@media screen and (min-width: 1000px) {
+  #modal .inner {
+    margin: 20px auto 60px; }
+    #modal .inner .footer {
+      zoom: 1;
+      padding-left: 30px;
+      padding-right: 30px; }
+      #modal .inner .footer:after {
+        clear: both;
+        content: '';
+        display: block;
+        height: 0;
+        visibility: hidden; }
+      #modal .inner .footer div {
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        float: left;
+        width: 33.332%;
+        padding-left: 10px;
+        padding-right: 10px; }
+        #modal .inner .footer div:first-child {
+          margin-left: 0; }
+        #modal .inner .footer div:last-child {
+          margin-right: 0; } }
+
+.content {
+  width: auto; }
+  @media screen and (min-width: 760px) {
+    .content {
+      width: auto;
+      padding: 20px 60px; } }
+  @media screen and (min-width: 1000px) {
+    .content {
+      width: auto;
+      padding: 20px 85px; } }
+  @media screen and (min-width: 1400px) {
+    .content {
+      width: auto;
+      max-width: 1420px; } }
+
+/* -------------------------------------------------------------------------- */
+body {
+  font-family: "Open Sans", X-LocaleSpecific, sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+/* -------------------------------------------------------------------------- */
+.key-features-section {
+  background: #fff; }
+  .key-features-section h2 {
+    font-size: 18px;
+    font-size: 1rem;
+    color: #0a84ff;
+    margin-bottom: 20px;
+    padding-top: 40px;
+    position: relative; }
+    @media screen and (min-width: 760px) {
+      .key-features-section h2 {
+        font-size: 24px;
+        font-size: 1.33333rem; } }
+    @media screen and (min-width: 1000px) {
+      .key-features-section h2 {
+        font-size: 36px;
+        font-size: 2rem; } }
+    .key-features-section h2:before {
+      background: #0a84ff;
+      border-radius: 5px;
+      content: '';
+      height: 5px;
+      left: 50%;
+      margin-left: -65px;
+      position: absolute;
+      top: 0;
+      width: 130px; }
+  .key-features-section .key-feature {
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    text-align: center; }
+    .key-features-section .key-feature a:link,
+    .key-features-section .key-feature a:visited {
+      color: #0a84ff;
+      text-decoration: none; }
+    .key-features-section .key-feature a:hover,
+    .key-features-section .key-feature a:active,
+    .key-features-section .key-feature a:focus {
+      color: #0a84ff;
+      text-decoration: underline; }
+  @media screen and (min-width: 760px) {
+    .key-features-section h2:before {
+      left: 0;
+      margin-left: 0; }
+    .key-features-section .key-feature {
+      zoom: 1;
+      background-position: top right;
+      margin: 40px 0 120px;
+      text-align: left; }
+      .key-features-section .key-feature:after {
+        clear: both;
+        content: '';
+        display: block;
+        height: 0;
+        visibility: hidden; }
+      .key-features-section .key-feature:last-child {
+        margin-bottom: 0; }
+      .key-features-section .key-feature .key-feature-content {
+        width: 45%; }
+        .key-features-section .key-feature .key-feature-content p {
+          max-width: 24em; }
+      .key-features-section .key-feature:nth-child(even) {
+        background-position: top left; }
+        .key-features-section .key-feature:nth-child(even) .key-feature-content {
+          float: right;
+          text-align: right; }
+          .key-features-section .key-feature:nth-child(even) .key-feature-content h2:before {
+            left: auto;
+            right: 0; }
+          .key-features-section .key-feature:nth-child(even) .key-feature-content p {
+            float: right; } }
+  @media screen and (min-width: 1000px) {
+    .key-features-section {
+      padding: 60px 0 0; } }
+  @media screen and (min-width: 1400px) {
+    .key-features-section .key-feature {
+      background-position: top right 160px; }
+      .key-features-section .key-feature:nth-child(even) {
+        background-position: top left 160px; } }
+
+@media screen and (min-width: 760px) {
+  html[dir="rtl"] .key-features-section .key-feature {
+    background-position: top left;
+    text-align: right; }
+    html[dir="rtl"] .key-features-section .key-feature .key-feature-content h2:before {
+      left: auto;
+      right: 0; }
+    html[dir="rtl"] .key-features-section .key-feature:nth-child(even) {
+      background-position: top right; }
+      html[dir="rtl"] .key-features-section .key-feature:nth-child(even) .key-feature-content {
+        float: left;
+        text-align: left; }
+        html[dir="rtl"] .key-features-section .key-feature:nth-child(even) .key-feature-content h2:before {
+          left: 0;
+          right: auto; }
+        html[dir="rtl"] .key-features-section .key-feature:nth-child(even) .key-feature-content p {
+          float: left; } }
+
+@font-face {
+  font-family: 'Font Awesome';
+  src: url("../../../media/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../../../media/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/* -------------------------------------------------------------------------- */
+html.android main, html.ios main {
+  display: none; }
+
+html.android #fallback, html.ios #fallback {
+  display: block; }
+
+#fallback {
+  display: none; }
+
+#outer-wrapper {
+  overflow-x: hidden;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  font-family: 'Noto Sans TC', 'Open Sans'; }
+  #outer-wrapper .light {
+    font-weight: lighter; }
+
+.background {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none; }
+  .background .centerbox {
+    height: 100%; }
+  .background .leftbox, .background .rightbox {
+    flex-grow: 1;
+    height: 100%; }
+
+.button.photon,
+.button.photon:link,
+.button.photon:visited {
+  font-size: 18px;
+  font-size: 1rem;
+  -webkit-transition: box-shadow 0.1s ease-in-out;
+  transition: box-shadow 0.1s ease-in-out;
+  background: #ff8e00;
+  background: linear-gradient(to right, #c40771 17%, #ff8e00 56%, #ffef4c 100%);
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.25);
+  color: #fff; }
+  .button.photon:hover, .button.photon:active, .button.photon:focus,
+  .button.photon:link:hover,
+  .button.photon:link:active,
+  .button.photon:link:focus,
+  .button.photon:visited:hover,
+  .button.photon:visited:active,
+  .button.photon:visited:focus {
+    background: #ff8e00;
+    background: linear-gradient(to right, #c40771 17%, #ff8e00 56%, #ffef4c 100%);
+    box-shadow: 0 0 11px 0 rgba(255, 255, 255, 0.25);
+    color: #fff; }
+
+.button.photon-flat,
+.button.photon-flat:link,
+.button.photon-flat:visited {
+  font-size: 18px;
+  font-size: 1rem;
+  -webkit-transition: background 0.1s ease-in-out;
+  transition: background 0.1s ease-in-out;
+  background: #0A84FF;
+  border-radius: 100px;
+  border: none;
+  color: #fff; }
+  .button.photon-flat:hover, .button.photon-flat:active, .button.photon-flat:focus,
+  .button.photon-flat:link:hover,
+  .button.photon-flat:link:active,
+  .button.photon-flat:link:focus,
+  .button.photon-flat:visited:hover,
+  .button.photon-flat:visited:active,
+  .button.photon-flat:visited:focus {
+    background: #2491ff;
+    color: #fff; }
+
+#outer-wrapper ul.download-list strong {
+  font-weight: bold; }
+
+.main-header a.download-link,
+a.download-link,
+.main-header .download-link,
+.download-link {
+  background: url("../../../media/img/firefox/quantum/button.png") top 0 center no-repeat;
+  background-size: auto 100%;
+  display: inline-block;
+  width: 240px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  vertical-align: middle;
+  text-shadow: 1px 1px 2px black;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-decoration: none; }
+  .main-header a.download-link:hover, .main-header a.download-link:focus, .main-header a.download-link:active, .main-header a.download-link:visited:hover, .main-header a.download-link:visited:focus, .main-header a.download-link:visited:active,
+  a.download-link:hover,
+  a.download-link:focus,
+  a.download-link:active,
+  a.download-link:visited:hover,
+  a.download-link:visited:focus,
+  a.download-link:visited:active,
+  .main-header .download-link:hover,
+  .main-header .download-link:focus,
+  .main-header .download-link:active,
+  .main-header .download-link:visited:hover,
+  .main-header .download-link:visited:focus,
+  .main-header .download-link:visited:active,
+  .download-link:hover,
+  .download-link:focus,
+  .download-link:active,
+  .download-link:visited:hover,
+  .download-link:visited:focus,
+  .download-link:visited:active {
+    color: #FFFFFF;
+    text-decoration: none; }
+
+.wordmark {
+  background: url("../../../media/img/firefox/quantum/firefox-wordmark.png") top 0 center no-repeat;
+  background-size: auto 100%;
+  display: inline-block;
+  width: 300px;
+  height: 100px; }
+  .wordmark.inversed {
+    background: url("../../../media/img/firefox/quantum/firefox-wordmark-inversed.png") top 0 center no-repeat; }
+
+/* -------------------------------------------------------------------------- */
+.free-fox-header {
+  position: relative;
+  display: block;
+  height: 750px;
+  margin-bottom: -80px; }
+  .free-fox-header .background .centerbox {
+    flex-basis: 1606px;
+    background: url("../../../media/img/firefox/quantum/header-bg.png") top -60px center no-repeat;
+    background-size: auto 100%; }
+  .free-fox-header .background .leftbox {
+    background: url("../../../media/img/firefox/quantum/header-bg-l.png") top -60px center no-repeat;
+    background-size: 100% 100%; }
+  .free-fox-header .background .rightbox {
+    background: url("../../../media/img/firefox/quantum/header-bg-r.png") top -60px center no-repeat;
+    background-size: 100% 100%; }
+  .free-fox-header .content {
+    text-align: center;
+    direction: rtl; }
+  .free-fox-header .free-fox-heading {
+    background: url("../../../media/img/firefox/quantum/free-fox-heading.png") top 0 center no-repeat;
+    background-size: 100% auto;
+    display: block;
+    width: 400px;
+    height: 93px;
+    vertical-align: top; }
+  .free-fox-header .free-fox-content {
+    display: inline-block;
+    width: 400px;
+    vertical-align: top;
+    direction: ltr; }
+    .free-fox-header .free-fox-content > p {
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
+      padding: 20px 10px;
+      margin-top: 20px;
+      margin-bottom: 0;
+      margin-left: 5px;
+      margin-right: 5px;
+      text-align: left; }
+      .free-fox-header .free-fox-content > p span {
+        white-space: nowrap; }
+  .free-fox-header .free-fox-video {
+    display: inline-block;
+    width: 400px;
+    direction: ltr; }
+    .free-fox-header .free-fox-video #video-thumb {
+      position: relative;
+      background: url("../../../media/img/firefox/quantum/video-thumb.png") top 0 center no-repeat;
+      background-size: 100% auto;
+      display: block;
+      width: 400px;
+      height: 225px;
+      text-align: center;
+      -webkit-transition: opacity 0.15s ease-in-out;
+      transition: opacity 0.15s ease-in-out; }
+    .free-fox-header .free-fox-video #video-play {
+      background: url("../../../media/img/firefox/quantum/play.png") top 0 center no-repeat;
+      background-size: 100% auto;
+      display: block;
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.9; }
+      .free-fox-header .free-fox-video #video-play:hover {
+        opacity: 1.0; }
+  .free-fox-header .footnote {
+    display: block;
+    text-align: right;
+    font-size: 9px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    font-weight: lighter; }
+  .free-fox-header .free-fox {
+    position: absolute;
+    margin: auto;
+    top: -20px;
+    left: -100%;
+    right: -100%;
+    background: url("../../../media/img/firefox/quantum/fox-top.png") left 0 center no-repeat;
+    background-size: auto 100%;
+    display: block;
+    width: 1300px;
+    height: 360px;
+    pointer-events: none; }
+  @media screen and (max-width: 480px) {
+    .free-fox-header {
+      background-position: top 0 center; }
+      .free-fox-header .content {
+        padding: 10px; }
+      .free-fox-header .free-fox-heading {
+        width: 300px;
+        height: 70px; }
+      .free-fox-header .free-fox-content {
+        width: 300px; }
+        .free-fox-header .free-fox-content > p {
+          display: flex;
+          flex-direction: column; }
+      .free-fox-header .free-fox-video {
+        width: 300px;
+        height: 169px; }
+        .free-fox-header .free-fox-video #video-thumb {
+          width: 300px;
+          height: 169px; } }
+  @media screen and (min-width: 480px) {
+    .free-fox-header {
+      background-position: top 0 center; } }
+  @media screen and (min-width: 760px) {
+    .free-fox-header .content {
+      padding: 20px 100px; } }
+  @media screen and (min-width: 1000px) {
+    .free-fox-header {
+      background-position: top -60px center; }
+      .free-fox-header .content {
+        padding: 20px 45px; }
+      .free-fox-header .free-fox-content {
+        margin-top: 120px;
+        margin-left: 80px; }
+      .free-fox-header .free-fox-video {
+        margin-top: 110px;
+        margin-left: 20px; } }
+
+/* -------------------------------------------------------------------------- */
+.free-fox-footer {
+  position: relative;
+  text-align: center;
+  margin-top: -60px;
+  display: block;
+  height: 550px; }
+  .free-fox-footer .background .centerbox {
+    flex-basis: 1232px;
+    background: url("../../../media/img/firefox/quantum/footer-bg.png") bottom 0 center no-repeat;
+    background-size: auto 50%; }
+  .free-fox-footer .background .leftbox {
+    background: url("../../../media/img/firefox/quantum/footer-bg-l.png") bottom 0 center no-repeat;
+    background-size: 100% 50%; }
+  .free-fox-footer .background .rightbox {
+    background: url("../../../media/img/firefox/quantum/footer-bg-r.png") bottom 0 center no-repeat;
+    background-size: 100% 50%; }
+  .free-fox-footer .wordmark {
+    margin-top: 160px; }
+  .free-fox-footer .free-fox {
+    display: block;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    margin-top: 240px;
+    width: 800px;
+    pointer-events: none; }
+    .free-fox-footer .free-fox:before {
+      content: "";
+      float: right;
+      background: url("../../../media/img/firefox/quantum/fox-bottom.png") top 0 center no-repeat;
+      background-size: auto 100%;
+      width: 238px;
+      height: 88px;
+      transform: rotate(-24deg); }
+
+/* -------------------------------------------------------------------------- */
+#video-modal {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  opacity: 0.0;
+  pointer-events: none;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out; }
+  #video-modal iframe {
+    position: absolute;
+    margin: auto;
+    top: -100%;
+    left: -100%;
+    bottom: -100%;
+    right: -100%;
+    box-shadow: 5px 5px 15px #000000;
+    width: 100%;
+    height: 100%; }
+  #video-modal .close-button {
+    text-decoration: none !important;
+    position: absolute;
+    top: 0;
+    right: 8px;
+    display: block;
+    z-index: 1000;
+    text-align: center; }
+    #video-modal .close-button:before {
+      font-family: 'Font Awesome';
+      font-size: 2em;
+      content: '\f00d';
+      text-shadow: 1px 1px 3px black;
+      color: #FFFFFF; }
+
+/* -------------------------------------------------------------------------- */
+.main-header {
+  background: #0060df;
+  background: url("../../../media/img/firefox/quantum/fox-tail-header.png") bottom -40px center no-repeat, linear-gradient(148deg, #0060df 7%, #0479f4 20%, #0681fc 27%, #02bdf1 60%, #01d3f0 67%, #05f0e6 100%);
+  color: #fff;
+  padding: 0 0 50px;
+  position: relative;
+  z-index: 1; }
+  .main-header h1.with-logo {
+    background-image: url("../../../media/img/logos/firefox/logo-quantum.png");
+    background-size: 189px 189px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 210px;
+    font-size: 36px; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), only screen and (min-resolution: 144dpi) {
+      .main-header h1.with-logo {
+        background-image: url("../../../media/img/logos/firefox/logo-quantum-high-res.png");
+        background-size: 189px 189px; } }
+    .main-header h1.with-logo .wordmark {
+      background-position: -20px 0;
+      background-size: 120% auto;
+      width: 200px;
+      height: 72px;
+      vertical-align: bottom; }
+  .main-header h2 {
+    font-size: 27px; }
+  .main-header a:link,
+  .main-header a:visited {
+    color: #fff;
+    text-decoration: none; }
+  .main-header a:hover,
+  .main-header a:active,
+  .main-header a:focus {
+    color: #fff;
+    text-decoration: underline; }
+  .main-header p {
+    margin: 40px auto; }
+  .main-header .cta-wrapper {
+    display: inline-block;
+    text-align: center; }
+  .main-header .beta-link {
+    display: block;
+    margin-top: 10px; }
+  .main-header .header-content {
+    -webkit-background-size: 300px 222px;
+    background-size: 300px 222px;
+    background-image: url("../../../media/img/firefox/quantum/new-tab.png");
+    background-position: bottom -40px center;
+    background-repeat: no-repeat;
+    padding-bottom: 240px;
+    text-align: center; }
+    .main-header .header-content h2 {
+      margin-left: 40px; }
+    .main-header .header-content p {
+      margin-top: 20px;
+      margin-right: 20px;
+      padding-top: 20px;
+      border-top: 2px solid #FFFFFF; }
+  .main-header .header-image {
+    z-index: 1; }
+    .main-header .header-image img {
+      display: none; }
+  .main-header:after {
+    background: transparent url("../../../media/img/firefox/quantum/wave-top.svg") top center no-repeat;
+    -webkit-background-size: 3844px 335px;
+    background-size: 3844px 335px;
+    bottom: -40px;
+    content: '';
+    display: block;
+    height: 355px;
+    left: 0;
+    position: absolute;
+    width: 100%; }
+  @media screen and (max-width: 480px) {
+    .main-header .header-content h2 {
+      margin-left: 0; }
+      .main-header .header-content h2 span {
+        white-space: nowrap; } }
+  @media screen and (min-width: 480px) {
+    .main-header {
+      padding: 0 0 40px; }
+      .main-header .header-content {
+        -webkit-background-size: 400px 296px;
+        background-size: 400px 296px;
+        padding-bottom: 320px; } }
+  @media screen and (min-width: 760px) {
+    .main-header {
+      padding: 0 0 30px; }
+      .main-header .header-content {
+        -webkit-background-size: 500px 370px;
+        background-size: 500px 370px;
+        padding-bottom: 390px; } }
+  @media screen and (min-width: 1000px) {
+    .main-header {
+      padding: 0 0; }
+      .main-header h1 {
+        background-position: top left; }
+      .main-header p {
+        margin: 40px 0; }
+      .main-header .content {
+        z-index: 2;
+        padding: 20px 0; }
+      .main-header .header-content {
+        background: none;
+        float: right;
+        margin-right: 60px;
+        padding-bottom: 0;
+        text-align: left;
+        width: 400px; }
+      .main-header .header-image {
+        float: right;
+        width: 50%; }
+        .main-header .header-image img {
+          display: block;
+          height: 662px;
+          max-width: none;
+          width: 922px; } }
+  @media screen and (min-width: 1400px) {
+    .main-header {
+      padding: 0 0 30px; } }
+
+@media screen and (min-width: 1000px) {
+  html[dir="rtl"] .main-header h1 {
+    background-position: top right; }
+  html[dir="rtl"] .main-header .header-content {
+    float: right;
+    text-align: right; }
+  html[dir="rtl"] .main-header .header-image {
+    float: left; } }
+
+/* -------------------------------------------------------------------------- */
+.key-features-section .key-feature h2 {
+  font-size: 27px; }
+  .key-features-section .key-feature h2 .large {
+    font-size: 54px; }
+  .key-features-section .key-feature h2 span {
+    white-space: nowrap; }
+
+.key-features-section .key-feature.fast {
+  background-image: url("../../../media/img/firefox/quantum/faster.png");
+  background-size: 130px 141px;
+  padding-top: 160px; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), only screen and (min-resolution: 144dpi) {
+    .key-features-section .key-feature.fast {
+      background-image: url("../../../media/img/firefox/quantum/faster-high-res.png");
+      background-size: 130px 141px; } }
+
+.key-features-section .key-feature.performance {
+  background-image: url("../../../media/img/firefox/quantum/performance.png");
+  background-size: 160px 150px;
+  padding-top: 170px; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), only screen and (min-resolution: 144dpi) {
+    .key-features-section .key-feature.performance {
+      background-image: url("../../../media/img/firefox/quantum/performance-high-res.png");
+      background-size: 160px 150px; } }
+
+.key-features-section .key-feature.privacy {
+  background-image: url("../../../media/img/firefox/quantum/privacy.png");
+  background-size: 300px 242px;
+  padding-top: 260px; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), only screen and (min-resolution: 144dpi) {
+    .key-features-section .key-feature.privacy {
+      background-image: url("../../../media/img/firefox/quantum/privacy-high-res.png");
+      background-size: 300px 242px; } }
+
+.key-features-section .key-feature.mozilla {
+  background-image: url("../../../media/img/firefox/quantum/mozilla.png");
+  background-size: 300px 261px;
+  padding-top: 280px; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), only screen and (min-resolution: 144dpi) {
+    .key-features-section .key-feature.mozilla {
+      background-image: url("../../../media/img/firefox/quantum/mozilla-high-res.png");
+      background-size: 300px 261px; } }
+
+@media screen and (min-width: 760px) {
+  .key-features-section .key-feature h2:before {
+    left: 0;
+    margin-left: 0; }
+  .key-features-section .key-feature.design {
+    text-align: center; }
+    .key-features-section .key-feature.design h2:before {
+      left: 50%;
+      margin-left: -65px; }
+  .key-features-section .key-feature.fast {
+    -webkit-background-size: 195px 212px;
+    background-size: 195px 212px;
+    min-height: 250px;
+    padding-top: 0; }
+  .key-features-section .key-feature.performance {
+    -webkit-background-size: 239px 225px;
+    background-size: 239px 225px;
+    min-height: 250px;
+    padding-top: 0; }
+  .key-features-section .key-feature.privacy {
+    -webkit-background-size: 370px 298px;
+    background-size: 370px 298px;
+    min-height: 320px;
+    padding-top: 0; }
+  .key-features-section .key-feature.mozilla {
+    -webkit-background-size: 350px 305px;
+    background-size: 350px 305px;
+    min-height: 320px;
+    padding-top: 0; } }
+
+@media screen and (min-width: 1000px) {
+  .key-features-section {
+    padding: 60px 0 0; }
+    .key-features-section .key-feature.fast {
+      -webkit-background-size: 260px 282px;
+      background-size: 260px 282px;
+      min-height: 300px; }
+    .key-features-section .key-feature.performance {
+      -webkit-background-size: 319px 300px;
+      background-size: 319px 300px;
+      min-height: 320px; }
+    .key-features-section .key-feature.privacy {
+      -webkit-background-size: 470px 378px;
+      background-size: 470px 378px;
+      min-height: 420px; }
+    .key-features-section .key-feature.mozilla {
+      -webkit-background-size: 450px 392px;
+      background-size: 450px 392px;
+      min-height: 420px; } }
+
+@media screen and (min-width: 1400px) {
+  .key-features-section .key-feature.privacy {
+    -webkit-background-size: 585px 471px;
+    background-size: 585px 471px;
+    background-position: top right 60px;
+    min-height: 490px; }
+  .key-features-section .key-feature.mozilla {
+    -webkit-background-size: 541px 471px;
+    background-size: 541px 471px;
+    background-position: top left 60px;
+    min-height: 490px; } }
+
+@media screen and (min-width: 760px) {
+  html[dir="rtl"] .key-features-section .key-feature.fast h2:before, html[dir="rtl"] .key-features-section .key-feature.performance h2:before, html[dir="rtl"] .key-features-section .key-feature.privacy h2:before, html[dir="rtl"] .key-features-section .key-feature.mozilla h2:before {
+    left: auto;
+    margin-left: 0;
+    right: 0; }
+  html[dir="rtl"] .key-features-section .key-feature.design {
+    text-align: center; } }
+
+@media screen and (min-width: 1400px) {
+  html[dir="rtl"] .key-features-section .key-feature.privacy {
+    background-position: top left 60px; }
+  html[dir="rtl"] .key-features-section .key-feature.mozilla {
+    background-position: top right 60px; } }

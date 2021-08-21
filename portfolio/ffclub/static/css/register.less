@@ -1,0 +1,135 @@
+@import "ffcstyle";
+#main-content {
+  height: auto;
+  min-height: 525px;
+}
+#main-content form ul li {
+  list-style: none;
+  display: block;
+  width: 100%;
+  float: left;
+  padding-bottom: 20px;
+  margin-left: 0;
+}
+
+#main-content form ul li label {
+  width: 60px;
+  line-height: 23px;
+  float: left;
+}
+#main-content form ul li label[for="id_subscribing"] {
+  width: 200px;
+}
+
+#main-content form ul li input, #main-content form ul li select {
+  float: left;
+  margin-right: 10px;
+}
+
+#main-content form ul li input[type="checkbox"] {
+  margin-top: 6px;
+}
+
+.registerHeading {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  margin-left: @side_margin;
+}
+
+.registerForm {
+  margin-left: @side_margin;
+}
+.registerForm ul:after{
+  .after_close;
+}
+
+.registerAgreement {
+  margin-left: @side_margin;
+  margin-right: @side_margin;
+  &:after {
+    .after_close;
+  }
+}
+.registerAgreement > .agreement {
+  float: left;
+  line-height: 50px;
+}
+.registerAgreement > .register {
+  float: right;
+}
+.registerPicture {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("../images/css/register_pic.png");
+  width: 383px;
+  height: 257px;
+}
+
+input#id_fullname {
+  width: 100px;
+}
+
+select#id_gender {
+  width: 70px;
+}
+
+input#id_address {
+  width: 400px;
+}
+
+input#id_occupation {
+  width: 200px;
+}
+
+@media only screen and (max-width: 800px){
+  #masthead {
+    width: 100%;
+  }
+
+  div#main-content {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  #main-content form ul:after {
+    .after_close;
+  }
+  #main-content form ul li label {
+    float: none;
+  }
+  #main-content form ul li input,
+  #main-content form ul li select {
+    float: none;
+  }
+  .registerAgreement:after{
+    .after_close;
+  }
+  .registerPicture {
+    position: relative;
+    float: none;
+  }
+  .registerAgreement .agreement{
+    line-height: normal;
+  }
+}
+
+@media only screen and (max-width: 640px){
+  .registerHeading, .registerForm, .registerAgreement, .registerPicture {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  #main-content form ul li input#id_title,
+  #main-content form ul li input#id_location,
+  #main-content form ul li input#id_num_of_ppl,
+  #main-content form ul li textarea#id_usage,
+  #main-content form ul li input#id_fullname,
+  #main-content form ul li input#id_email,
+  #main-content form ul li input#id_address,
+  #main-content form ul li input#id_occupation,
+  #main-content form ul li textarea#id_feedback {
+    width: 90%;
+  }
+}

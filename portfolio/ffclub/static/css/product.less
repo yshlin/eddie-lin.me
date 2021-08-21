@@ -1,0 +1,298 @@
+@import "ffcstyle";
+
+#main-content {
+  width: 760px;
+  background-color: #fff;
+  padding-bottom: 30px;
+}
+
+#main-content ul.products {
+  display: block;
+  width: 740px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#main-content .orderForm ul.products li.productHead {
+  height: 30px !important;
+  margin-top: 0;
+  padding-bottom: 10px;
+  text-indent: 45px;
+}
+
+#main-content ul.products li.product {
+  display: block;
+  list-style: none;
+  height: 130px;
+  border-bottom: 1px dotted grey;
+  margin-top: 20px;
+}
+
+a.productPhotosLink {
+  display: block;
+  h4 {
+    color: @linkBlue;
+  }
+  &:hover h4 {
+    color: @linkBlueHover;
+    text-decoration: underline;
+  }
+}
+
+div.productPreview {
+  margin-left: 45px;
+  float: left;
+  width: 120px;
+  height: 100%;
+}
+
+div.productDescription {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 450px;
+  height: 100%;
+}
+
+div.productQuantity {
+  float: left;
+  width: 120px;
+  height: 100%;
+  position: relative;
+}
+
+div.productQuantity select {
+  position: absolute;
+  width: 60px;
+  height: 80px;
+  right: 55px;
+  bottom: 20px;
+}
+
+div.orderDescription {
+  padding-top: 80px;
+  margin-left: @side_margin;
+  margin-right: @side_margin;
+}
+
+div.productPostscript {
+  margin-right: @side_margin;
+  text-align: right;
+}
+
+div.orderProductForm {
+  margin-left: @side_margin;
+  margin-right: @side_margin;
+}
+
+#main-content .orderForm ul {
+  padding-top: 20px;
+  margin-bottom: 20px;
+  &:after {
+    .after_close;
+  }
+}
+
+#main-content .orderForm ul li {
+  list-style: none;
+  display: block;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+}
+
+#main-content .orderForm ul.errorlist {
+  .errorList;
+  & li {
+    float: none;
+  }
+}
+
+#main-content .orderForm ul.errorlist:after {
+  .errorListAfter;
+}
+
+#main-content .orderForm div.orderProductForm ul li label {
+  width: 100px;
+  line-height: 23px;
+  float: left;
+  padding-bottom: 30px;
+}
+
+#main-content .orderForm div.orderProductForm ul li label[for=id_usage] {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+#main-content .orderForm div.orderProductForm ul li input#id_title {
+  width: 300px;
+}
+
+#main-content .orderForm div.orderProductForm ul li input#id_location {
+  width: 400px;
+}
+
+#main-content .orderForm div.orderProductForm ul li input#id_num_of_ppl {
+  width: 60px;
+}
+
+#main-content .orderForm div.orderProductForm ul li textarea#id_usage {
+  width: 100%;
+  height: 150px;
+}
+
+#main-content .orderForm div.orderProductForm ul li input#id_fullname {
+  width: 100px;
+}
+
+#main-content .orderForm div.orderProductForm ul li input#id_email {
+  width: 200px;
+}
+
+#main-content .orderForm div.orderProductForm ul li input#id_address {
+  width: 400px;
+}
+
+#main-content .orderForm div.orderProductForm ul li input#id_occupation {
+  width: 200px;
+}
+
+#main-content .orderForm div.orderProductForm ul li textarea#id_feedback {
+  width: 400px;
+  height: 100px;
+}
+
+#main-content .orderForm ul li .helptext {
+  float: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#main-content .orderForm ul li input, #main-content .orderForm ul li select {
+  float: left;
+}
+
+#main-content .orderForm button.submitButton {
+  text-indent: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#main-content .orderForm button.loginButton {
+  text-indent: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.orderProductButton {
+  margin-left: @side_margin;
+  margin-right: @side_margin;
+  padding-bottom: 30px;
+  &:after {
+    .after_close;
+  }
+}
+
+.orderProductButton > .agreement {
+  float: left;
+  line-height: 50px;
+}
+
+.orderProductButton > .orderButton {
+  float: right;
+}
+
+@media only screen and (max-width: 800px) {
+  #main-feature.default {
+    width:100%;
+    background-position: 0 0;
+  }
+
+  div#main-content {
+    width: 100%;
+    padding: 0;
+  }
+
+  div#main-content div.orderDescription {
+    margin: 0;
+    padding-left: 10px;
+    width: 96%;
+  }
+
+  #main-content ul.products {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #main-content ul.products li.product {
+    height: 240px;
+    position: relative;
+  }
+
+  #main-content .orderForm ul.products li.productHead {
+    text-indent: 10px;
+  }
+
+  #main-content ul.products li.product .productPreview {
+    height: 120px;
+    margin: 0;
+    padding-left: 10px;
+  }
+
+  #main-content ul.products li.product .productDescription {
+    height: 120px;
+    width: 92%;
+  }
+
+  #main-content ul.products li.product .productQuantity {
+    height: 120px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  div.productPostscript {
+    margin-right: 10px;
+  }
+  .orderProductButton {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .orderProductButton .agreement{
+    line-height: normal;
+  }
+}
+@media only screen and (max-width: 640px) {
+  #main-content .orderForm div.orderProductForm ul li label {
+    float: none;
+    width: 100%;
+  }
+
+  #main-content .orderForm div.orderProductForm ul li input,
+  #main-content .orderForm div.orderProductForm ul li select {
+    float: none;
+  }
+  div.orderProductForm {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #main-content ul.products li.product {
+    height: 280px;
+  }
+  #main-content .orderForm div.orderProductForm ul li input#id_title,
+  #main-content .orderForm div.orderProductForm ul li input#id_location,
+  #main-content .orderForm div.orderProductForm ul li input#id_num_of_ppl,
+  #main-content .orderForm div.orderProductForm ul li textarea#id_usage,
+  #main-content .orderForm div.orderProductForm ul li input#id_fullname,
+  #main-content .orderForm div.orderProductForm ul li input#id_email,
+  #main-content .orderForm div.orderProductForm ul li input#id_address,
+  #main-content .orderForm div.orderProductForm ul li input#id_occupation,
+  #main-content .orderForm div.orderProductForm ul li textarea#id_feedback {
+    width: 90%;
+  }
+}

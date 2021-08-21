@@ -1,0 +1,96 @@
+div.eventWall {
+    width: 100%;
+}
+
+.eventWall ul li {
+    width: 300px;
+    margin: auto;
+    /*overflow: hidden;*/
+    /*text-align: center;*/
+    display: block;
+    float: left;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.5), -1px -1px 2px rgba(255,255,255,1);
+}
+.eventWall ul:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.slidewrap {
+    z-index: 100;
+	position: fixed;
+	width: 100%;
+    height: 100%;
+	overflow: hidden;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: none;
+}
+
+.slide {
+	width:100%;
+	height: 0;
+	
+	position:absolute;
+	text-align: center;
+	top:40px;
+	left:0px;
+/*	-webkit-transition: -webkit-transform 1s ease-in-out;*/
+}
+
+.slidewrap .slide .slideTitle {
+    width: 100% !important;
+    height: 20px !important;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.slide div {
+	display: inline-block;
+	height:100px;
+	width:100px;
+	background-size:100%;
+	background-repeat:no-repeat;
+	
+}
+
+.slidewrap .next, .slidewrap .prev{
+    background: url("/static/images/css/slide-arrows.png") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    cursor: pointer;
+    display: block;
+    height: 60px;
+    opacity: 0.6;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -99em;
+    top: 40%;
+    transition: opacity 0.3s ease-in-out 0s, left 0.3s ease-in-out 0s, right 0.3s ease-in-out 0s;
+    width: 44px;
+    z-index: 10000;
+}
+
+.slidewrap .next {
+    background-position: 100% 0;
+    right: 4px;
+}
+
+.slidewrap .prev {
+    background-position: 0 0;
+    left: 4px;
+}
+
+.slidewrap .next:hover {
+    opacity: 1;
+    right: 0px;
+}
+
+.slidewrap .prev:hover {
+    opacity: 1;
+    left: 0px;
+}

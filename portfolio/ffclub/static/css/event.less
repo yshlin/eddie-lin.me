@@ -1,0 +1,298 @@
+@import "ffcstyle";
+
+h1 a:hover {
+  text-decoration: none;
+}
+
+.uploadForm {
+  position:absolute;
+  top:20px;
+  left:0;
+  right:0;
+  width: 400px;
+  height: auto;
+  margin: auto;
+  padding: 20px;
+  background-color: #EAEFF2;
+//  background-image: linear-gradient(#CAE1F4, #EEEEEE);
+//  background-image: linear-gradient(#D4DDE4, #EAEFF2);
+  background-repeat: repeat-x;
+  .rounded_corners(8px);
+  .BoxShadow;
+  &:after {
+    .after_close;
+  }
+}
+
+.uploadForm select#id_event {
+  width: 200px;
+}
+.uploadForm input#id_image_large {
+  width: 200px;
+}
+.uploadForm input#id_description {
+  width: 200px;
+}
+
+div#main-content {
+  padding: 20px;
+}
+
+.popup form ul {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  .BoxShadow(0, 0, 1px, @h_color);
+  &:after {
+    .after_close;
+  }
+}
+.popup form ul li {
+  list-style: none;
+  display: block;
+  width: 100%;
+  float: left;
+  padding-bottom: 20px;
+  margin-left: 0;
+  color: @body_color;
+  font-size: @body_size;
+}
+
+.popup form ul li label {
+  width: 100px;
+  line-height: 23px;
+  float: left;
+}
+.popup form ul li label[for=shareOnFb] {
+  float: right;
+  width: 240px;
+  margin-left: 20px;
+}
+.popup form ul li input#shareOnFb[type=checkbox] {
+  float: right;
+  height: 25px;
+}
+
+.popup form ul li input, #main-content form ul li select {
+  float: left;
+}
+.popup form button {
+  text-indent: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.popup ul.errorlist {
+  .errorList;
+  & li {
+    float: none;
+    color: #ffffff;
+    padding-bottom: 0;
+  }
+}
+.popup ul.errorlist:after {
+  .errorListAfter;
+}
+
+div.eventShowHead {
+  background-color: #2162A9;
+  width: 100%;
+  height: 100px;
+}
+
+header#masthead {
+  height: 100%;
+}
+
+header#masthead > h1 {
+  background-image: none;
+  text-align: left;
+  margin: 0;
+  width: 450px;
+  height: 100%;
+  line-height: 120px;
+  text-indent: 20px;
+  color: #ffffff;
+  font-size: 36px;
+}
+
+div#main-content {
+  position: relative;
+  width: 1000px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+a.productsLink {
+  margin-bottom: 10px;
+}
+
+div#main-content a.sharePhotoLink {
+  color: #ffffff;
+  text-shadow: none;
+  line-height: 45px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+div#main-content .eventWall {
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-bottom: 30px;
+}
+
+div#main-content .eventWall ul li.eventPhoto {
+  width: 300px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  & .socialButtons {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    .transition_block(.25s, ease-in-out, opacity)
+  }
+  & .socialButtons div {
+    pointer-events: auto;
+  }
+  & .socialButtons ul {
+    pointer-events: auto;
+  }
+  &:hover .socialButtons {
+    opacity: 100;
+  }
+}
+
+.facebookLike {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.googlePlus {
+  position: absolute;
+  top: 30px;
+  right: 80px;
+}
+
+.photoFrame {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.photoDescription {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 60px;
+}
+
+.photoInfo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #D4DDE4;
+  height: 65px;
+}
+
+.loveCircle {
+  left: auto;
+  right: 35px;
+}
+
+#page-nav {
+  position: relative;
+  width: 100%;
+  height: 10px;
+}
+
+#main-content .miscDropdown {
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+#main-content .miscDropdown:before {
+  content: " ";
+  display: block;
+  opacity: 0;
+  height: 15px;
+}
+
+#main-content .miscDropdown li {
+  z-index: 1;
+  background-color: #ffffff;
+  width: 40px;
+  display: none;
+  margin-left: 0;
+  text-indent: 5px;
+}
+
+#main-content .miscDropdown:hover {
+  & li {
+    display: block;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #masthead {
+    width: 100%;
+  }
+  div#main-content{
+    width: 100%;
+    padding: 10px;
+  }
+  div#main-content .eventWall{
+    margin: 0;
+  }
+  .loveCircle {
+    top: -45px;
+    z-index: 1;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #masthead a#tabzilla {
+    position: absolute;
+    right: 0;
+  }
+  #main-feature.eventShow  {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  div.eventShowHead {
+    height: 150px;
+  }
+  header#masthead > h1 {
+    text-indent: 0;
+    font-size: 20px;
+    width: 100%;
+  }
+  #main-feature.eventShow > h3 {
+    line-height: 30px;
+    font-size: 14px;
+    width: 100%;
+  }
+  .uploadForm {
+    width: 300px;
+    height: 280px;
+    padding: 10px;
+  }
+  .popup form ul li label {
+    float: none;
+  }
+  .popup form ul li input, #main-content form ul li select {
+    float: none;
+  }
+}

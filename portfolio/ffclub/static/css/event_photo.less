@@ -1,0 +1,46 @@
+@import "ffcstyle";
+#main-content{
+  width: 800px;
+  height: auto;
+  background-color: #fff;
+}
+#main-content div.eventPhoto {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  margin-left: 55px;
+  margin-right: 55px;
+  display: block;
+}
+#main-content div.eventPhoto a.eventPhotoLink {
+  display: block;
+}
+
+#main-content div.eventPhoto a.eventPhotoLink img {
+  display: block;
+  margin: auto;
+  width: 700px;
+  height: auto;
+}
+
+#main-content div.eventPhoto p {
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px){
+  #masthead {
+    width: 100%;
+  }
+
+  div#main-content {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  #main-content div.eventPhoto {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #main-content div.eventPhoto a.eventPhotoLink img {
+    width: 100%;
+  }
+}

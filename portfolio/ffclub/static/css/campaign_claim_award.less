@@ -1,0 +1,92 @@
+@import "ffcstyle";
+
+#wrapper {
+  padding-bottom: 20px;
+}
+#main-content{
+  width: 800px;
+  height: auto;
+  background: none;
+  h1, h2 {
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 0;
+  }
+}
+#main-content div.campaignBanner {
+  display: block;
+  width: 800px;
+  height: 275px;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#main-content div.campaignClaimAward {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 55px;
+  padding-right: 55px;
+  display: block;
+  background-color: #fff;
+  .registerHeading {
+    padding-top: 20px;
+  }
+  .registerForm ul {
+    padding-top: 20px;
+    li {
+      list-style: none;
+      width: 100%;
+      display: block;
+      float: left;
+      padding-bottom: 20px;
+      margin-left: 0;
+      label {
+        float: left;
+        width: 100px;
+        line-height: 23px;
+        &[for="id_subscribing"] {
+          width: 200px;
+        }
+      }
+      select {
+        float: left;
+        margin-right: 10px;
+      }
+      input {
+        float: left;
+        &[type="checkbox"] {
+          margin-top: 3px;
+        }
+
+        &#id_fullname {
+          width: 100px;
+        }
+
+        &#id_gender {
+          width: 70px;
+        }
+
+        &#id_address {
+          width: 400px;
+        }
+
+        &#id_occupation {
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 800px){
+  #masthead {
+    width: 100%;
+  }
+
+  div#main-content {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+}

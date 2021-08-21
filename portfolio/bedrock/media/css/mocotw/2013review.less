@@ -1,0 +1,632 @@
+@import "../sandstone/lib";
+
+
+.sky #outer-wrapper {
+  background: #C13831;
+}
+
+#masthead > nav > ul > li > a {
+  color: white !important;
+  + ul {
+    .box-shadow(4px 4px 4px rgba(0,0,0,0.6));
+    > li > ul {
+      .box-shadow(4px 4px 4px rgba(0,0,0,0.6));
+    }
+  }
+}
+
+#main-content {
+  background: white;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  width: 920px;
+  h1 {
+    display: block;
+    width: 500px;
+    margin: 15px auto;
+    text-align: center;
+    font-size: 28px;
+    span {
+      display: inline-block;
+    }
+  }
+}
+
+#spring-content {
+  background: white;
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 920px;
+  h2 {
+    text-align: center;
+    font-size: 28px;
+  }
+  .button {
+    padding: 10px;
+    color: #ffffff;
+    &:before {
+      content: " ";
+      display: block;
+      position: absolute;
+    }
+  }
+  .download-button:before {
+    background: url(../../../media/img/mocotw/2013review/download.png);
+    width: 17px;
+    height: 16px;
+    top: 9px;
+  }
+  .share-button:before {
+    background: url(../../../media/img/mocotw/2013review/share.png);
+    width: 22px;
+    height: 18px;
+    top: 8px;
+  }
+  #download-package {
+    position: relative;
+    display: block;
+    width: 200px;
+    margin: 20px auto auto auto;
+    text-indent: 20px;
+    &:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      background: url(../../../media/img/mocotw/2013review/download.png);
+      width: 17px;
+      height: 16px;
+      top: 9px;
+
+    }
+  }
+}
+
+#couplet-up {
+  display: block;
+  background: url(../../../media/img/mocotw/2013review/up.png);
+  width: 745px;
+  height: 85px;
+  margin: auto;
+}
+
+#couplet-left {
+  display: block;
+  background: url(../../../media/img/mocotw/2013review/left.png);
+  width: 86px;
+  height: 425px;
+  float: left;
+}
+
+#couplet-right {
+  display: block;
+  background: url(../../../media/img/mocotw/2013review/right.png);
+  width: 86px;
+  height: 425px;
+  float: right;
+}
+
+#review-video {
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 40px;
+    width: 735px;
+    height: 410px;
+  img {
+    display: block;
+    cursor: pointer;
+    .box-shadow(4px 4px 4px rgba(0,0,0,0.6));
+  }
+  iframe {
+    display: none;
+    width: 731px;
+    height: 410px;
+    .box-shadow(4px 4px 4px rgba(0,0,0,0.6));
+  }
+  .play {
+    display: block;
+    background: url(../../../media/img/mocotw/2013review/play.png) no-repeat;
+    position: absolute;
+    margin: auto;
+    top: 134px;
+    left: 0;
+    right: 0;
+    width: 140px;
+    height: 140px;
+    pointer-events: none;
+  }
+}
+
+.socialButton {
+  display: inline-block;
+  width: 35px;
+  height: 34px;
+}
+.socialButtons {
+  float: right;
+  margin-right: 100px;
+  .facebook {
+    background: url(../../../media/img/mocotw/2013review/fb.png) no-repeat;
+    .socialButton;
+  }
+  .gplus {
+    background: url(../../../media/img/mocotw/2013review/google.png) no-repeat;
+    .socialButton;
+  }
+  .plurk {
+    background: url(../../../media/img/mocotw/2013review/plurk.png) no-repeat;
+    .socialButton;
+  }
+}
+
+.separator {
+  display: block;
+  background: url(../../../media/img/mocotw/2013review/line-1.png);
+  width: 732px;
+  height: 7px;
+  margin: auto;
+}
+
+#timeline {
+  position: relative;
+  width: 735px;
+  margin: auto;
+  &:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    display: block;
+    background: url(../../../media/img/mocotw/2013review/line-3.png);
+    width: 8px;
+    height: 842px;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+  .clearfix;
+  ul li {
+    list-style-image: url(../../../media/img/mocotw/2013review/list-dot.png);
+  }
+  h2 {
+    font-size: 18px;
+    text-align: left;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    span {
+      display: inline-block;
+    }
+  }
+  .event {
+    display: block;
+    width: 46%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  #event1 {
+    float: right;
+    margin-top: 26px;
+  }
+  #event2 {
+    float: left;
+    margin-right: 50%;
+    margin-top: -10px;
+  }
+  #event3 {
+    float: right;
+    margin-top: -12px;
+  }
+  #event4 {
+    float: left;
+    margin-right: 50%;
+    margin-top: -40px;
+  }
+  #event5 {
+    float: right;
+    margin-top: -60px;
+  }
+  #event6 {
+    float: left;
+    margin-right: 50%;
+    margin-top: -10px;
+  }
+  #event7 {
+    float: right;
+    margin-top: -5px;
+  }
+  #event8 {
+    float: left;
+    margin-right: 50%;
+    margin-top: -100px;
+  }
+  #event9 {
+    float: left;
+    margin-right: 50%;
+    margin-top: -10px;
+  }
+  #event10 {
+    float: right;
+    margin-top: -14px;
+  }
+  #event11 {
+    float: left;
+    margin-right: 50%;
+    margin-top: -68px;
+  }
+  #event12 {
+    float: right;
+    margin-top: -10px;
+  }
+  #event13 {
+    float: left;
+    margin-right: 50%;
+    margin-top: -74px;
+  }
+  #event14 {
+    float: left;
+    margin-right: 50%;
+    margin-top: -10px;
+  }
+  #event15 {
+    float: right;
+    margin-top: -110px;
+    margin-bottom: 110px;
+  }
+
+  .month {
+    display: block;
+    width: 731px;
+    height: 40px;
+    background: url(../../../media/img/mocotw/2013review/line-2.png) no-repeat;
+    background-position: 0 20px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    &:before {
+      content: "";
+      background: url(../../../media/img/mocotw/2013review/dot.png) no-repeat;
+      display: block;
+      padding-top: 8px;
+      font-weight: bold;
+      width: 40px;
+      height: 40px;
+      margin: auto;
+      text-align: center;
+    }
+  }
+  #month1 {
+    &:before {
+      content: "端";
+    }
+  }
+  #month5 {
+    top: 120px;
+    &:before {
+      content: "蒲";
+    }
+  }
+  #month6 {
+    top: 194px;
+    &:before {
+      content: "荔";
+    }
+  }
+  #month7 {
+    top: 380px;
+    &:before {
+      content: "瓜";
+    }
+  }
+  #month8 {
+    top: 440px;
+    &:before {
+      content: "桂";
+    }
+  }
+  #month9 {
+    top: 560px;
+    &:before {
+      content: "菊";
+    }
+  }
+  #month10 {
+    top: 610px;
+    &:before {
+      content: "陽";
+    }
+  }
+  #month11 {
+    top: 660px;
+    &:before {
+      content: "葭";
+    }
+  }
+  #month12 {
+    top: 726px;
+    &:before {
+      content: "臘";
+    }
+  }
+  #month-end {
+    top: 830px;
+    &:before {
+      content: "";
+      display: none;
+    }
+  }
+
+  #continue {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+
+
+.springCouplet {
+  display: inline-block;
+  position: relative;
+  width: 215px;
+  height: 245px;
+  padding: 10px 15px;
+  background-position: 15px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  .transition(background-color ease-in-out 0.2s);
+  .button {
+    .transition(opacity ease-in-out 0.2s);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+  }
+  &:hover{
+    background-color: #CAE1F4;
+    .button {
+      opacity: 1;
+    }
+  }
+  .download-button {
+    left: 10px;
+    bottom: 10px;
+    width: 80px;
+    text-align: right;
+  }
+  .share-button {
+    right: 40px;
+    bottom: 10px;
+    min-width: 50px;
+    text-align: right;
+  }
+}
+
+#spring-couplets {
+  text-align: center;
+  margin: 20px auto 6px auto;
+}
+
+#spring {
+  background: url(../../../media/img/mocotw/2013review/spring1.png) no-repeat;
+  .springCouplet;
+}
+#happiness {
+  background: url(../../../media/img/mocotw/2013review/spring2.png) no-repeat;
+  .springCouplet;
+}
+#spring-arrive {
+  background: url(../../../media/img/mocotw/2013review/spring3.png) no-repeat;
+  .springCouplet;
+}
+#horse {
+  background: url(../../../media/img/mocotw/2013review/spring4.png) no-repeat;
+  .springCouplet;
+}
+#lucky {
+  background: url(../../../media/img/mocotw/2013review/spring5.png) no-repeat;
+  .springCouplet;
+}
+
+#footer-email-form {
+  width: 920px;
+  h3 {
+    margin-bottom: 10px;
+  }
+  .form-contents, #newsletter-form .form-contents {
+    width: 100%;
+  }
+  .form-submit, #newsletter-form .form-submit {
+    width: 100%;
+  }
+}
+
+#popup {
+  z-index: 10000;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  #spring-full {
+    display: block;
+    margin: auto;
+    max-height: 600px;
+    max-width: 600px;
+    height: 90%;
+  }
+  .button {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    text-align: right;
+  }
+  .download-button {
+    left: 50%;
+    margin: 10px 20px 10px 40px;
+  }
+  .share-button {
+    left: 50%;
+    margin: 10px 20px 10px 160px;
+    min-width: 60px;
+  }
+  #fan-page-box {
+    display: block;
+    position: absolute;
+    width: 220px;
+    height: 100px;
+    bottom: 10px;
+    right: 50%;
+    margin-right: 100px;
+    background: #ffffff;
+    .border-radius(5px);
+    h4 {
+      text-indent: 10px;
+      font-size: 18px;
+      margin: 10px 0 0 0;
+    }
+    .fb_iframe_widget {
+    }
+  }
+}
+
+@media screen and (max-width: 999px) {
+  #main-content {
+    width: 620px;
+    padding: 10px;
+  }
+  #spring-content {
+    width: 620px;
+    padding: 10px;
+  }
+  #footer-email-form {
+    width: 620px;
+    padding: 10px;
+  }
+  #couplet-up {
+    background-size: 100% auto;
+    width: 600px;
+    height: 68px;
+  }
+  #couplet-left {
+    display: none;
+  }
+  #couplet-right {
+    display: none;
+  }
+  #review-video {
+    width: 600px;
+    height: 336px;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+    .play {
+      background-size: 100% auto;
+      width: 100px;
+      height: 100px;
+      top: 120px;
+    }
+  }
+  .socialButtons {
+    margin-right: 0;
+  }
+  #timeline {
+    width: 600px;
+    margin-top: 10px;
+    &:before {
+      margin-left: 17px;
+      height: 1204px;
+      background-size: 8px 100%;
+    }
+    ul {
+      margin-bottom: 0;
+    }
+    .month {
+      width: 600px;
+      margin-left: 0;
+      margin-top: -10px;
+      margin-bottom: -20px;
+      float: left;
+      position: relative;
+      z-index: 100;
+      top: 0 !important;
+      &:before {
+        margin-left: 0;
+      }
+    }
+    .event {
+      margin-left: 40px;
+      width: 90%;
+      float: left !important;
+      margin-top: 10px !important;
+      margin-right: 0 !important;
+    }
+    #event15 {
+      margin-bottom: 40px;
+    }
+    #month-end {
+      margin-top: -50px;
+    }
+  }
+  .separator {
+    width: 600px;
+    background-size: 100% 7px;
+  }
+  #spring, #happiness, #spring-arrive, #horse, #lucky {
+    .button {
+      opacity: 1;
+    }
+  }
+}
+@media screen and (max-width: 638px) {
+  #main-content {
+    width: 300px;
+    h1 {
+      width: 300px;
+    }
+  }
+  #spring-content {
+    width: 300px;
+  }
+  #footer-email-form {
+    width: 300px;
+  }
+  #couplet-up {
+    width: 300px;
+    height: 34px;
+  }
+  #review-video {
+    width: 300px;
+    height: 168px;
+    .play {
+      width: 50px;
+      height: 50px;
+      top: 60px;
+    }
+  }
+  .socialButtons {
+    float: none;
+    text-align: right;
+  }
+  .separator {
+    width: 300px;
+  }
+  #timeline {
+    &:before {
+      height: 1507px;
+    }
+    width: 300px;
+    .month {
+      width: 300px;
+    }
+    .event {
+      width: 80%;
+    }
+  }
+}
